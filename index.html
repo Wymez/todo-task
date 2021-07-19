@@ -1,51 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8">
     <title>todos</title>
 </head>
 <body>
-    <div class="title">todos</div>
-    <div class="workspace">
-        <button><img src="icons/select-all.png" alt="select-all" 
-          style="vertical-align: middle"></button>
-        <input type="text" placeholder="What needs to be done?">
-        <br>
-        <hr>
-        <input type="checkbox" id="chb1">
-        <label for="chb1"></label>
-        <input value="HTML">
-        <button><img src="icons/close.png" alt="close"
-          style="vertical-align: middle"></button>
-        <br>
-        <hr>
-        <input type="checkbox" id="chb2"> 
-        <label for="chb2"></label>
-        <input value="CSS">
-        <button><img src="icons/close.png" alt="close" 
-          style="vertical-align: middle"></button>
-        <br>
-        <input type="checkbox" id="chb3">
-        <label for="chb3"></label>
-        <input value="JS">
-        <button><img src="icons/close.png" alt="close" 
-          style="vertical-align: middle"></button>
-        <br>
-        <input type="checkbox" id="chb4">
-        <label for="chb4"></label>
-        <input value="JS tools">
-        <button><img src="icons/close.png" alt="close" 
-          style="vertical-align: middle"></button>
-    </div>
-</body>
-<footer class="workspace">
-    <span>
+<div class="todos">
+    <div class="todos__body">
+        <div class="todos__header">
+            <div class="todos__title">todos</div>
+        </div>
+        <div class="todos__workspace">
+            <div class="search-todos">
+                <!-- <div class="search-todos__btn"> -->
+                    <button class="search-todos__btn"><!-- <img src="icons/select-all.png" alt="select-all"
+                                 style="vertical-align: middle"> --> </button>
+               <!-- </div> -->
+                <input class="inputs-style search-todos__input" type="text" placeholder="What needs to be done?">
+            </div>
+            <div class="todos__split-line"></div>
+            <div class="list-todos">
+                <div class="list-todos__item">
+                    <input class="list-todos__chb" type="checkbox" id="chb1">
+                    <label class="list-todos__invisible-lbl" for="chb1"></label>
+                    <input class="inputs-style list-todos__input" value="HTML">
+                    <button class="list-todos__btn">
+
+                    </button>
+                </div>
+                <div class="todos__split-line"></div>
+                <div class="list-todos__item">
+                    <input class="list-todos__chb" type="checkbox" id="chb2">
+                    <label class="list-todos__invisible-lbl" for="chb2"></label>
+                    <input class="inputs-style list-todos__input" value="HTML">
+                    <button class="list-todos__btn">
+
+                    </button>
+                </div>
+                <div class="todos__split-line"></div>
+                <div class="list-todos__item">
+                    <input class="list-todos__chb" type="checkbox" id="chb3">
+                    <label class="list-todos__invisible-lbl" for="chb3"></label>
+                    <input class="inputs-style list-todos__input" value="HTML">
+                    <button class="list-todos__btn">
+
+                    </button>
+                </div>
+                <div class="todos__split-line"></div>
+                <div class="list-todos__item">
+                    <input class="list-todos__chb" type="checkbox" id="chb4">
+                    <label class="list-todos__invisible-lbl" for="chb4"></label>
+                    <input class="inputs-style list-todos__input" value="HTML">
+                    <button class="list-todos__btn">
+
+                    </button>
+                </div>
+                <div class="todos__split-line"></div>
+            </div>
+            <span>
         <output name="num_of_left">0</output> items left
     </span>
-    <span><button class="but">All</button></span>
-    <span><button class="but">Active</button></span>
-    <span><button class="but">Completed</button></span>
-    <span><button class="but">Clear completed</button></span>
-</footer>
+            <span><button class="but">All</button></span>
+            <span><button class="but">Active</button></span>
+            <span><button class="but">Completed</button></span>
+            <span><button class="but">Clear completed</button></span>
+        </div>
+    </div>
 
+</div>
+
+</body>
