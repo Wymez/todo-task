@@ -1,0 +1,122 @@
+body {
+    background: #F5F5F5;
+}
+.todos__body {
+    margin: 10px 200px;
+    padding: 20px;
+}
+.todos__workspace {
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+    height: 310px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 2px #cfcfcf;
+}
+.todos__header {
+    width: 240px;
+    margin: auto;
+}
+.todos__title {
+    font-size: 100px;
+    color: #EBDFDF;
+    font-weight: 100;
+    font-family: "Helvetica Neue", serif;
+}
+.search-todos {
+    display: flex;
+    /*border-bottom: 1px solid;*/
+}
+.list-todos__item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.inputs-style {
+    padding: 2px;
+    border: none;
+}
+.search-todos__input {
+    margin-left: 10px;
+    width: 700px;
+    font-style: italic;
+    font-family: "Helvetica Neue", serif;
+    font-size: medium;
+    font-weight: lighter;
+}
+.inputs-style:focus {
+    outline: none;
+    border: none;
+}
+.search-todos__btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24px;
+    height: 12px;
+    margin: auto;
+    border: none;
+    background: url("../icons/select-all.png") center no-repeat;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+.search-todos__btn:focus-visible {
+
+}
+.search-todos__btn:hover {
+}
+.search-todos__btn:active {
+    transform: rotate(-180deg);
+}
+/*.search-todos__btn::before {
+    transition: transform rotate(-45deg);
+}*/
+.todos__split-line {
+    margin: 10px -20px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.list-todos__item {
+
+}
+.list-todos__chb {
+    display: none;
+}
+.list-todos__invisible-lbl::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #5dc3af;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+input[class="list-todos__chb"]:checked + label::before{
+    background: url("../icons/completed.png") center no-repeat;
+}
+.list-todos__input {
+    width: 32em;
+    height: 40px;
+    font-size: 14pt;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", serif;
+}
+.list-todos__btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    border: none;
+    background: url("../icons/close.png") center no-repeat;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.list-todos__btn:active {
+    transform: scale(1.3);
+}
+/*.list-item {
+    display: flex;
+}
+.chb-style {
+    display: none;
+}

@@ -29,11 +29,11 @@ input[type="checkbox"]:checked + label::before {
 	font-size:  30px;
 	color: #ede2e2;
 }
-.workspace{
+/*.workspace{
 	padding: 200px;
 	background: #ffffff;
 	border: 1px solid #ffffff;
-}
+}*/
 .but {
 	display: inline-block;
 	box-sizing: border-box;
